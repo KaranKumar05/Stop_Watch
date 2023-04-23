@@ -1,0 +1,64 @@
+.timeDisplay span::after{
+    content: ":";
+}
+.timeDisplay span{
+  margin-right: -20px;
+}
+@media (max-width: 830px) {
+  .text {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 685px) {
+  .text {
+    width: 10em;
+    text-align: center;
+  }
+  .container .timeDisplay {
+    font-size: 4em;
+  }
+}
+@media (max-width: 498px) {
+  .text {
+    font-size: 2em;
+  }
+  .container .timeDisplay {
+    font-size:3em;
+  }
+  .timeDisplay span::after{
+    content: " :";
+}
+  .buttons button {
+    padding: 0.1em 1em;
+    border-radius: 8px;
+    font-size: 1.1em;
+  }
+}
+@media (max-width:397px) {
+    .heading{
+        top: 7%;
+    }
+    .container{
+        row-gap: 2em;
+    }
+    .timeDisplay{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 4em;
+    }
+    .timeDisplay span{
+        line-height: .8em;
+        border-bottom: 2px solid white;
+    }
+    .timeDisplay span::after{
+        content: "";
+    }
+}
+@media (max-width:344px) {
+    .text {
+        width: 10em;
+        font-size: 1.5em;
+      }
+    
+}

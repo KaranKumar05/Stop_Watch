@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/qurey.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="text">STOP WATCH</div>
+    </div>
+    <div class="container">
+      <div class="timeDisplay">
+        <span>00</span>
+        <span>00</span>
+        <span>00</span>
+        000
+      </div>
+      <div class="buttons">
+        <button id="pause">Pause</button>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-input" />
+        <label for="toggle" class="toggle-label"></label>
+        <div class="toggle-button"></div>
+        <i
+          class="bi bi-moon"
+          style="
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            font-size: 1.2rem;
+            color: #fff;
+          "
+        ></i>
+        <i
+          class="bi bi-sun"
+          style="
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            font-size: 1.2rem;
+            color: #fff;
+          "
+        ></i>
+      </div>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/theme.js"></script>
+  </body>
+</html>

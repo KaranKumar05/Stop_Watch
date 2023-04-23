@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.heading {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate3d(-50%, -50%, 0);
+  overflow: hidden;
+}
+.text {
+  transform: translate3d(0, 100%, 0);
+  font-size: 3em;
+  font-weight: bold;
+  animation: slide-up 3s infinite;
+  font-family: "Bruno Ace SC", cursive;
+}
+@keyframes slide-up {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  /* position: fixed; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container .timeDisplay {
+  font-size: 5em;
+  /* position: fixed; */
+  font-weight: bold;
+  color: gray;
+}
+.buttons {
+  display: flex;
+  column-gap: 2em;
+}
+.buttons button {
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Teko", sans-serif;
+}
+.buttons #pause,
+.buttons #start,
+.buttons #reset {
+  color: white;
+}
+.buttons #pause {
+  background-color: rgb(255, 255, 47);
+}
+.buttons #pause:hover {
+  background-color: rgb(255, 255, 0);
+  box-shadow: 3px 3px 10px rgb(255, 252, 84);
+}
+.buttons #start {
+  background-color: rgb(75, 255, 75);
+}
+.buttons #start:hover {
+  background-color: rgb(0, 255, 0);
+  box-shadow: 3px 3px 10px rgb(0, 130, 2);
+}
+.buttons #reset {
+  background-color: rgb(255, 40, 40);
+}
+.buttons #reset:hover {
+  background-color: rgb(255, 0, 0);
+  box-shadow: 3px 3px 10px rgb(247, 85, 85);
+}
